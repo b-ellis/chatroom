@@ -40,7 +40,7 @@ io.on('connection', function (socket) {
         var destinationUser = tokens[0];
         var destinationUserID = people[destinationUser];
         if (destinationUserID) {
-          io.to(destinationUserID).emit('message', senderName + ":" + tokens[1]);
+          io.to(destinationUserID).emit('message', '<div class="receiving">' + senderName + ":" + tokens[1] + "</div>");
         }
     });
 

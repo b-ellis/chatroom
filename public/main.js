@@ -19,7 +19,7 @@ $(document).ready(function() {
     });
 
     var addMessage = function(message) {
-        messages.append('<div>' + message + '</div>');
+        messages.append('<div class="sending">' + message + '</div>');
     };
 
     input.on('keydown', function(event) {

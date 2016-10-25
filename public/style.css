@@ -4,3 +4,9 @@ li{
 #mainPage{
     display: none;
 }
+.sending{
+    color: red;
+}
+.receiving{
+    color: green;
+}
