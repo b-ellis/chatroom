@@ -1,11 +1,28 @@
 <!doctype html>
 <title>Chatroom</title>
 <meta charset="utf-8">
+<link rel="stylesheet" href="style.css" type="text/css" />
 
 <!-- JS -->
 <script src="//code.jquery.com/jquery-2.1.0.js"></script>
 <script src="main.js"></script> 
 <script type="text/javascript" src="/socket.io/socket.io.js"></script>
 
-<input type="text" placeholder="message">
-<div id="messages"></div>
+<ul id='users'>
+    
+</ul>
+<ul id="pages">
+    <li id="loginPage">
+        <div>
+            <h2>What is your name?</h2>
+            <form>
+                <input id="usernameInput" type="text" name="username"/>
+                <input type="submit" id="join" value="Join chat"/>
+            </form>
+        </div>
+    </li>
+    <li id="mainPage">
+        <input id="userInput" type="text" placeholder="message">
+        <div id="messages"></div>
+    </li>
+</ul>
